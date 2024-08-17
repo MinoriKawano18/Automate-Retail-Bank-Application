@@ -26,7 +26,7 @@ pipeline {
             steps {
                 sh '''#!/bin/bash
                 source venv/bin/activate
-                eb create [Workload2] --single
+                eb create Workload2 --single
                 '''
             }
         }
