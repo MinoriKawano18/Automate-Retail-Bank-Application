@@ -20,7 +20,7 @@ Installing Jenkins on the AWS EC2 terminal allows developers to use the cloud to
 Used conditional statements that utilized exit codes 0 or 1 if a resource exceeds a threshold. 0 = Successful execution, 1 = failed execution/ threshold exceeded
 Exit codes are important in the CI/CD pipeline especially in automation. They allow the pipeline to have clear indications of whether different steps in the pipeline succeed and whether certain limitations exceeded the boundaries set. In this case, the exit codes used notified us whether system resources exceeded the boundaries set and whether the pipeline would be successful. It allows for quicker reconfiguration in the testing stages. 
 
-## Issues/Troubleshooting
+# Issues/Troubleshooting
 Experienced an issue with this step when trying to push my script to the repository as I accidentally cloned my repository within the existing repository that was on the EC2 terminal. This uploaded the script twice.
 
 6) Created a multibranch pipeline in Jenkins that could be connected to github
@@ -87,3 +87,7 @@ Implement strict access controls and permissions to limit who can deploy to prod
 
 ## Conclusion
 This project ultimately helped me to realize how intensive the CI/CD pipeline can really be. Each step is crucial in deploying a fully functional application. It is important to be aware of where issues might arise and how to troubleshoot it. 
+
+## Diagram
+![Workload 2](https://github.com/user-attachments/assets/8ba63f79-6650-4dcd-a00a-b2bf92acf86f)
+
