@@ -89,5 +89,6 @@ Implement strict access controls and permissions to limit who can deploy to prod
 This project ultimately helped me to realize how intensive the CI/CD pipeline can really be. Each step is crucial in deploying a fully functional application. It is important to be aware of where issues might arise and how to troubleshoot it. 
 
 ## Diagram
-![Workload 2](https://github.com/user-attachments/assets/8ba63f79-6650-4dcd-a00a-b2bf92acf86f)
+![Workload 2](https://github.com/user-attachments/assets/5b5a8de6-9f64-4173-ae94-e71c6291f9c1)
+
 
