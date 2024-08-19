@@ -33,7 +33,7 @@ AWS Command Line Interface (CLI) is a tool used in automation scripts that is us
 
 8) Switched to “Jenkins” user
 Switched to the Jenkins user that was previously installed on the EC2 terminal. Used sudo to overwrite limitations in permissions in order to create a password for security and to actively switch into the Jenkins user rather than the original Ubuntu user, where the application can be automated. 
-# Used cd workspace where the multibranch pipeline created on the Jenkins user interface exists within the Jenkins user that was connected to the EC2 terminal
+Used cd workspace where the multibranch pipeline created on the Jenkins user interface exists within the Jenkins user that was connected to the EC2 terminal
 
 9) Activated the Python Environment
 A virtual environment is a self contained directory used to create isolated environments for different projects and assists in managing the bins and libraries needed for an application. This prevents conflicts with configuration drift, and ensures that the pipeline uses the same dependencies in the Python environment as well as from the project’s external code. This creates a stable and controlled environment where building, testing, and deploying runs smoothly. 
@@ -60,12 +60,13 @@ Edited the Jenkinsfile within the Github repository and committed the changes wi
 The previously mentioned issue in step 5 created a failure in the building stage. In order to address this issue, I needed to remove the redundant repository that was embedded previously. I did this using the rm -rf command that deletes files and directories forcefully. In addition I used git -rm to remove this file from the repository. 
 
 <img width="1400" alt="Screenshot 2024-08-17 at 2 44 26 PM" src="https://github.com/user-attachments/assets/cbe66c58-a895-4558-898b-2c99aced27fc">
+
 <img width="1400" alt="Screenshot 2024-08-17 at 2 44 34 PM" src="https://github.com/user-attachments/assets/1a09f9a2-c39d-462c-b291-54e025839745">
 
 ## Success
 With the removal of the submodule, the build was successful and the application was deployed. 
-
 <img width="1400" alt="Screenshot 2024-08-17 at 2 37 58 PM" src="https://github.com/user-attachments/assets/fbec0496-bc30-4579-9845-f38e75b1b538">
+
 <img width="1400" alt="Screenshot 2024-08-17 at 2 37 07 PM" src="https://github.com/user-attachments/assets/20ce9a00-da68-44ef-a2f2-8181e47d850e">
 
 ## How the CICD Pipeline Increases Business Efficiency
